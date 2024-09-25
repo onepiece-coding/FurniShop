@@ -1,0 +1,209 @@
+/*****************/
+/* BELLOW 1344PX */
+/*****************/
+@media (max-width: 84em) {
+  .hero-desc {
+    color: #fff;
+  }
+}
+
+/****************/
+/* BELLOW 944PX */
+/****************/
+@media (max-width: 59em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 74rem;
+  }
+  .header-container {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 5.9rem;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4.8rem 2rem;
+    width: 24rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3b5d50;
+    z-index: 9999;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .menu-toggle:hover + .main-nav,
+  .main-nav:hover {
+    display: flex;
+  }
+
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.8rem;
+  }
+
+  .product-text-box {
+    grid-column: 1 / -1;
+  }
+
+  .why-us-container,
+  .we-help-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-us-container {
+    gap: 2.4rem;
+  }
+
+  .we-help-text-box {
+    grid-row: 1;
+  }
+
+  .popular-container,
+  .posts-container,
+  .team-grid,
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  .testimonial-card--container {
+    width: 100%;
+  }
+
+  .contacts-box,
+  .cart-actions,
+  .secondary-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-form {
+    margin-bottom: 3.2rem;
+    margin-top: 9.6rem;
+    width: 100%;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .text-col {
+    grid-column: 1 / -1;
+  }
+}
+
+/****************/
+/* BELLOW 768PX */
+/****************/
+@media (max-width: 48em) {
+  .container {
+    max-width: 66rem;
+  }
+
+  .section-hero {
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .section-products,
+  .section-why-us,
+  .section-we-help,
+  .section-popular,
+  .section-testimonials,
+  .section-team,
+  .section-services {
+    padding-top: 6.4rem;
+    padding-bottom: 0;
+  }
+
+  .testimonial-nav {
+    display: none;
+  }
+
+  .contact-container {
+    max-width: 48rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+/****************/
+/* BELLOW 592PX */
+/****************/
+@media (max-width: 37em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 60rem;
+  }
+
+  .popular-container,
+  .posts-container,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/****************/
+/* BELLOW 432PX */
+/****************/
+@media (max-width: 27em) {
+  .container {
+    margin: 0 1.2rem;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .primary,
+  .secondary {
+    width: fit-content;
+  }
+
+  .products-container,
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-form,
+  .checkout-coupon-box,
+  .order-box {
+    padding: 2.4rem;
+  }
+
+  .row {
+    gap: 1.2rem;
+  }
+
+  .checkout-coupon-div {
+    flex-direction: column;
+  }
+
+  .form-body {
+    flex-direction: column;
+  }
+}

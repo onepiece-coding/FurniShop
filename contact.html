@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Have questions or need assistance? Reach out to the FurniShop team via email or phone. We're here to provide the support you need for a seamless shopping experience."
+    />
+    <meta
+      name="keywords"
+      content="Furniture, Modern Furniture, Stylish Furniture, Affordable Furniture"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/querries.css" />
+
+    <title>Contact FurniShop - We're Here to Help</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="header-container container">
+        <a class="header-brand" href="index.html" aria-label="brand-icon"
+          >Furni<span>.</span></a
+        >
+        <button
+          class="menu-toggle"
+          id="toggle-menu-btn"
+          aria-label="Open navigation menu"
+        >
+          <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav-list nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-label="Go to Home page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link" aria-label="Go to Shop page"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="about.html"
+                class="nav-link"
+                aria-label="Go to About Us page"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="services.html"
+                class="nav-link"
+                aria-label="Go to Services page"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link" aria-label="Go to Blog page"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link active"
+                aria-label="Go to Contact Us page"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <ul class="main-nav-list cta">
+            <li class="cta-item">
+              <a href="#" class="cta-link" aria-label="Go to Profile page"
+                ><ion-icon class="cta-icon" name="person-outline"></ion-icon
+              ></a>
+            </li>
+            <li class="cta-item">
+              <a href="cart.html" class="cta-link" aria-label="Go to Cart page"
+                ><ion-icon class="cta-icon" name="cart-outline"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero-container container">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Contact Us</h1>
+            <p class="desc hero-desc">
+              Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+              velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            </p>
+            <div class="btn-container">
+              <a class="btn primary" href="#" aria-label="Shop now">Shop Now</a>
+              <a class="btn secondary" href="#" aria-label="Explore">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact before-footer-section">
+        <div class="contact-container container">
+          <div class="contacts-box">
+            <div class="contact-info address">
+              <ion-icon class="contact-icon" name="location"></ion-icon>
+              <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+            </div>
+            <div class="contact-info mail">
+              <ion-icon class="contact-icon" name="mail"></ion-icon>
+              <a
+                class="contact-detail"
+                href="mailto:info@yourdomain.com"
+                aria-label="Mail-us"
+                >info@yourdomain.com</a
+              >
+            </div>
+            <div class="contact-info phone">
+              <ion-icon class="contact-icon" name="call"></ion-icon>
+              <a
+                class="contact-detail"
+                href="tel:+1 294 3925 3939"
+                aria-label="Call us"
+                >+1 294 3925 3939</a
+              >
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="input-box form--name-input">
+              <div>
+                <label for="first-name">First Name</label>
+                <input
+                  class="form-input"
+                  id="first-name"
+                  type="text"
+                  name="first-name"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last-name">Last Name</label>
+                <input
+                  class="form-input"
+                  id="last-name"
+                  type="text"
+                  name="last-name"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                id="email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="message">Message</label>
+              <textarea
+                class="form-input"
+                id="message"
+                rows="5"
+                cols="30"
+                name="message"
+                maxlength="600"
+                required
+              ></textarea>
+            </div>
+            <button class="contact-form-btn btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container container">
+        <div class="footer-img-box">
+          <img src="img/sofa.webp" alt="Green sofa" class="footer-img" />
+        </div>
+        <div class="sub-form">
+          <div class="form-header">
+            <ion-icon class="form-icon" name="mail-outline"></ion-icon>
+            <h3 class="form-title">Subscribe to Newsletter</h3>
+          </div>
+          <form class="form-body">
+            <input
+              id="full-name"
+              class="form-input"
+              type="text"
+              placeholder="Enter Your Name"
+              name="full-name"
+              autocomplete="name"
+              required
+            />
+            <input
+              id="email"
+              class="form-input"
+              type="email"
+              placeholder="Enter Your Email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <button class="form-cta-btn" aria-label="Submit info">
+              <ion-icon class="form-cta-icon" name="paper-plane"></ion-icon>
+            </button>
+          </form>
+        </div>
+
+        <div class="footer-main">
+          <div class="text-col">
+            <a class="footer-brand" href="index.html" aria-label="brand-icon"
+              >Furni.</a
+            >
+            <p class="footer-desc desc">
+              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+              habitant
+            </p>
+            <div class="socials-container">
+              <a class="social-links" href="#" aria-label="Facebook">
+                <ion-icon class="social-link" name="logo-facebook"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="Twitter">
+                <ion-icon class="social-link" name="logo-twitter"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="Instagram">
+                <ion-icon class="social-link" name="logo-instagram"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="LinkedIn">
+                <ion-icon class="social-link" name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-col">
+            <h3 class="nav-title">Company Info</h3>
+            <ul class="footer-nav">
+              <li>
+                <a
+                  class="footer-link"
+                  href="about.html"
+                  aria-label="Go to About Us page"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="services.html"
+                  aria-label="Go to Services page"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="blog.html"
+                  aria-label="Go to Blog page"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="contact.html"
+                  aria-label="Go to Contact Us page"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Careers & Policies</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="Check Jobs">Jobs</a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="about.html#our-team"
+                  aria-label="See our team"
+                  >Our team</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Check leadership"
+                  >Leadership</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Privacy Policy"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Help & Support</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="go to Support page"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Knowledge base"
+                  >Knowledge base</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Live chat"
+                  >Live chat</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Popular Products</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="Nordic chair"
+                  >Nordic Chair</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Kruzo Aero chair"
+                  >Kruzo Aero</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Ergonomic chair"
+                  >Ergonomic Chair</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-box">
+          <p class="copyright-text">Copyright ©2024. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review the items you've added to your cart at FurniShop. Update quantities, remove products, and proceed to checkout for a seamless furniture shopping experience."
+    />
+    <meta
+      name="keywords"
+      content="Furniture, Modern Furniture, Stylish Furniture, Affordable Furniture"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/querries.css" />
+
+    <title>Your Cart | FurniShop</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="header-container container">
+        <a class="header-brand" href="index.html" aria-label="brand-icon"
+          >Furni<span>.</span></a
+        >
+        <button
+          class="menu-toggle"
+          id="toggle-menu-btn"
+          aria-label="Open navigation menu"
+        >
+          <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav-list nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-label="Go to Home page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link" aria-label="Go to Shop page"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="about.html"
+                class="nav-link"
+                aria-label="Go to About Us page"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="services.html"
+                class="nav-link"
+                aria-label="Go to Services page"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link" aria-label="Go to Blog page"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link"
+                aria-label="Go to Contact Us page"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <ul class="main-nav-list cta">
+            <li class="cta-item">
+              <a href="#" class="cta-link" aria-label="Go to Profile page"
+                ><ion-icon class="cta-icon" name="person-outline"></ion-icon
+              ></a>
+            </li>
+            <li class="cta-item">
+              <a href="cart.html" class="cta-link" aria-label="Go to Cart page"
+                ><ion-icon class="cta-icon" name="cart-outline"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-cart before-footer-section">
+        <div class="section-container container">
+          <h2 class="heading-secondary">Your Shopping Cart</h2>
+
+          <div class="cart-items">
+            <div class="cart-item">
+              <img
+                src="img/product-1.webp"
+                alt="Nordic Chair"
+                class="cart-item-img"
+              />
+
+              <div class="cart-item-details">
+                <h3 class="cart-item-title">Nordic Chair</h3>
+                <p class="cart-item-price">$50.00</p>
+              </div>
+
+              <div class="cart-item-quantity">
+                <label for="quantity-1">Quantity:</label>
+                <input
+                  type="number"
+                  id="quantity-1"
+                  class="cart-item-qty"
+                  name="quantity-1"
+                  value="1"
+                  min="1"
+                />
+              </div>
+
+              <div class="cart-item-total">$50.00</div>
+
+              <button class="cart-item-remove">Remove</button>
+            </div>
+
+            <div class="cart-item">
+              <img
+                src="img/product-3.webp"
+                alt="Ergonomic Chair"
+                class="cart-item-img"
+              />
+
+              <div class="cart-item-details">
+                <h3 class="cart-item-title">Ergonomic Chair</h3>
+                <p class="cart-item-price">$43.00</p>
+              </div>
+
+              <div class="cart-item-quantity">
+                <label for="quantity-2">Quantity:</label>
+                <input
+                  type="number"
+                  id="quantity-2"
+                  class="cart-item-qty"
+                  name="quantity-2"
+                  value="1"
+                  min="1"
+                />
+              </div>
+
+              <div class="cart-item-total">$43.00</div>
+
+              <button class="cart-item-remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="cart-actions">
+            <div class="cart-more">
+              <div class="edit-cart">
+                <button class="update-cart-btn btn">Update Cart</button>
+                <button class="continue-shopping-btn btn">
+                  Continue Shopping
+                </button>
+              </div>
+              <div class="add-coupon">
+                <h3>Coupon</h3>
+                <p class="coupon-text">Enter a coupon if you have one.</p>
+                <div class="coupon-div">
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="coupon-code"
+                    placeholder="Coupon code"
+                    name="coupon-code"
+                    autocomplete="off"
+                    required
+                  />
+                  <button class="btn apply-coupon">Apply Coupon</button>
+                </div>
+              </div>
+            </div>
+            <div class="cart-summary">
+              <h3 class="total-title">Cart Totals</h3>
+              <div class="cart-total">
+                <div>
+                  <p>Subtotal</p>
+                  <strong>93.00$</strong>
+                </div>
+                <div>
+                  <p>Total</p>
+                  <strong>93.00$</strong>
+                </div>
+              </div>
+              <button
+                class="checkout-btn btn"
+                onclick="window.location='checkout.html'"
+              >
+                Proceed To Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container container">
+        <div class="footer-img-box">
+          <img src="img/sofa.webp" alt="Green sofa" class="footer-img" />
+        </div>
+        <div class="sub-form">
+          <div class="form-header">
+            <ion-icon class="form-icon" name="mail-outline"></ion-icon>
+            <h3 class="form-title">Subscribe to Newsletter</h3>
+          </div>
+          <form class="form-body">
+            <input
+              id="full-name"
+              class="form-input"
+              type="text"
+              placeholder="Enter Your Name"
+              name="full-name"
+              autocomplete="name"
+              required
+            />
+            <input
+              id="email"
+              class="form-input"
+              type="email"
+              placeholder="Enter Your Email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <button class="form-cta-btn" aria-label="Submit info">
+              <ion-icon class="form-cta-icon" name="paper-plane"></ion-icon>
+            </button>
+          </form>
+        </div>
+
+        <div class="footer-main">
+          <div class="text-col">
+            <a class="footer-brand" href="index.html" aria-label="brand-icon"
+              >Furni.</a
+            >
+            <p class="footer-desc desc">
+              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+              habitant
+            </p>
+            <div class="socials-container">
+              <a class="social-links" href="#" aria-label="Facebook">
+                <ion-icon class="social-link" name="logo-facebook"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="Twitter">
+                <ion-icon class="social-link" name="logo-twitter"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="Instagram">
+                <ion-icon class="social-link" name="logo-instagram"></ion-icon>
+              </a>
+              <a class="social-links" href="#" aria-label="LinkedIn">
+                <ion-icon class="social-link" name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-col">
+            <h3 class="nav-title">Company Info</h3>
+            <ul class="footer-nav">
+              <li>
+                <a
+                  class="footer-link"
+                  href="about.html"
+                  aria-label="Go to About Us page"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="services.html"
+                  aria-label="Go to Services page"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="blog.html"
+                  aria-label="Go to Blog page"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="contact.html"
+                  aria-label="Go to Contact Us page"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Careers & Policies</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="Check Jobs">Jobs</a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="about.html#our-team"
+                  aria-label="See our team"
+                  >Our team</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Check leadership"
+                  >Leadership</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Privacy Policy"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Help & Support</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="go to Support page"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Knowledge base"
+                  >Knowledge base</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Live chat"
+                  >Live chat</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-col">
+            <h3 class="nav-title">Popular Products</h3>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#" aria-label="Nordic chair"
+                  >Nordic Chair</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Kruzo Aero chair"
+                  >Kruzo Aero</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#" aria-label="Ergonomic chair"
+                  >Ergonomic Chair</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-box">
+          <p class="copyright-text">Copyright ©2024. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
