@@ -7,9 +7,6 @@ FurniShop is a modern, responsive eCommerce website built with HTML and CSS. Thi
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
